@@ -1,0 +1,11 @@
+name: portfolio
+
+services:
+    portfolio:
+        build: .
+        ports:
+            - 3000:80
+
+networks:
+    traefik:
+        external: true

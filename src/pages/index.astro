@@ -1,0 +1,126 @@
+---
+import SkillsPanel from "~/components/SkillsPanel.astro";
+import Home from "~/layouts/Home.astro";
+import GlobeAlt from "~/components/icons/hero/globe-alt.astro";
+import CpuChip from "~/components/icons/hero/cpu-chip.astro";
+import CircleStack from "~/components/icons/hero/circle-stack.astro";
+import WrenchScrewdriver from "~/components/icons/hero/wrench-screwdriver.astro";
+import ServerStack from "~/components/icons/hero/server-stack.astro";
+---
+
+<Home>
+    <p>
+        Hey, I'm a fullstack developer from Germany with a passion across the
+        stack, wether its native apps, web development or infrastructure.
+    </p>
+    <div class="flex flex-col gap-4">
+        <h2 class="text-xl font-bold">Skills and Technologies</h2>
+        <div class="mx-4">
+            <div class="grid grid-cols-2 gap-x-8 gap-y-4">
+                <SkillsPanel
+                    title="Web Development"
+                    skills={[
+                        {
+                            name: "TypeScript",
+                            url: "https://www.typescriptlang.org",
+                        },
+                        {
+                            name: "React",
+                            url: "https://reactjs.org",
+                        },
+                        {
+                            name: "Next.js",
+                            url: "https://nextjs.org",
+                        },
+                        {
+                            name: "TailwindCSS",
+                            url: "https://tailwindcss.com",
+                        },
+                        {
+                            name: "Astro",
+                            url: "https://astro.build",
+                        },
+                        {
+                            name: "PHP",
+                            url: "https://php.net",
+                        },
+                    ]}
+                    span><GlobeAlt /></SkillsPanel
+                >
+                <SkillsPanel
+                    title="Native Development"
+                    skills={[
+                        {
+                            name: "C++",
+                        },
+                        {
+                            name: "Qt (C++)",
+                            url: "https://www.qt.io",
+                        },
+                        {
+                            name: "Go",
+                            url: "https://go.dev",
+                        },
+                    ]}><CpuChip /></SkillsPanel
+                >
+                <SkillsPanel
+                    title="Databases"
+                    skills={[
+                        {
+                            name: "PostgreSQL",
+                            url: "https://reactjs.org",
+                        },
+                        {
+                            name: "MySQL/MariaDB",
+                            url: "https://mysql.com",
+                        },
+                        {
+                            name: "MongoDB",
+                            url: "https://mongodb.com",
+                        },
+                        {
+                            name: "Redis (Valkey)",
+                            url: "https://valkey.io",
+                        },
+                    ]}
+                    span><CircleStack /></SkillsPanel
+                >
+                <SkillsPanel
+                    title="Other Languages"
+                    skills={[
+                        {
+                            name: "Python",
+                            url: "https://python.org",
+                        },
+                        {
+                            name: "Bash",
+                            url: "https://www.gnu.org/software/bash",
+                        },
+                    ]}><WrenchScrewdriver /></SkillsPanel
+                >
+                <SkillsPanel
+                    title="Containers"
+                    skills={[
+                        {
+                            name: "Docker",
+                            url: "htps://docker.com",
+                        },
+                        {
+                            name: "cri-o",
+                            url: "https://cri-o.io",
+                        },
+                        {
+                            name: "Kubernetes",
+                            url: "https://kubernetes.io",
+                        },
+                        {
+                            name: "Helm",
+                            url: "https://helm.sh",
+                        },
+                    ]}
+                    span><ServerStack /></SkillsPanel
+                >
+            </div>
+        </div>
+    </div>
+</Home>

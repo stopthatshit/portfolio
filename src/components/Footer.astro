@@ -1,0 +1,29 @@
+---
+import Discord from "./icons/Discord.astro";
+import Github from "./icons/Github.astro";
+
+const socials = {
+    github: "stopthatshit",
+    discord: "221267299171172352",
+} as const;
+---
+
+<footer class="mx-4 flex flex-row gap-4">
+    <div class="text-center text-xs leading-6">
+        code is clean, design is getting there
+    </div>
+    <div class="flex flex-grow flex-row justify-end gap-4">
+        <a
+            href={`https://discord.com/users/${socials.discord}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Discord"><Discord /></a
+        >
+        <a
+            href={`https://github.com/${socials.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"><Github /></a
+        >
+    </div>
+</footer>

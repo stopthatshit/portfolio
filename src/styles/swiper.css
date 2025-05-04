@@ -1,0 +1,6 @@
+.swiper-slide {
+    width: 10% !important;
+}
+.swiper-wrapper {
+    transition-timing-function: linear;
+}

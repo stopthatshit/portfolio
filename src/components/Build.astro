@@ -1,0 +1,16 @@
+---
+const buildDate = new Date().toLocaleString("de-DE", {
+    timeZone: "Europe/Berlin",
+    dateStyle: "medium",
+});
+---
+
+<div class="absolute bottom-2 right-4">
+    <div class="text-xs text-gray-400">
+        Built on {buildDate} with <a
+            href="https://astro.build"
+            target="_blank"
+            rel="noreferrer">astro</a
+        >
+    </div>
+</div>

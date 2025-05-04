@@ -1,0 +1,26 @@
+---
+import Project from "~/components/Project.astro";
+import Home from "~/layouts/Home.astro";
+---
+
+<Home title="Projects">
+    <h1 class="text-2xl font-semibold">Projects</h1>
+    <div class="flex flex-col gap-4">
+        <Project
+            title="Portfolio"
+            url="https://github.com/stopthatshit/portfolio"
+        >
+            This portfolio website.
+        </Project>
+        <Project title="Homelab" url="https://github.com/stopthatshit/homelab">
+            My personal homelab setup using frp, wireguard, traefik, kubernetes
+            and docker to connect 4 servers. This website is hosted on one of
+            those.
+        </Project>
+        <Project title="LoL Random Champ" url="/lol/random">
+            League of Legends random champion selector. Whenever you dont know
+            what to pick.
+        </Project>
+        <Project title="BulletMeta" url="">Coming soon.</Project>
+    </div>
+</Home>

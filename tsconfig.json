@@ -1,0 +1,13 @@
+{
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "verbatimModuleSyntax": true,
+        "target": "ESNext",
+        "jsx": "react-jsx",
+        "baseUrl": "src",
+        "paths": {
+            "~/*": ["./*"]
+        }
+    },
+    "exclude": ["node_modules", "dist", "public"]
+}

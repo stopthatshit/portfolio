@@ -1,0 +1,18 @@
+---
+interface Props {
+    href: string;
+    title: string;
+}
+
+const { href, title } = Astro.props;
+// Remove / at start and end
+const isCurrent =
+    href.replace(/^\/|\/$/g, "") === Astro.url.pathname.replace(/^\/|\/$/g, "");
+---
+
+<a
+    href={href}
+    class:list={["text-xl hover:text-teal-100", isCurrent && "text-teal-200"]}
+>
+    {title}
+</a>

@@ -1,0 +1,30 @@
+---
+interface Props {
+    name: string;
+    url?: string;
+}
+
+const { name, url } = Astro.props;
+---
+
+{
+    url ? (
+        <a
+            href={url}
+            class:list={[
+                "flex items-center rounded-md border-2 border-gray-200 border-opacity-50 align-middle",
+                "hover:border-teal-100 hover:text-teal-100",
+            ]}
+        >
+            <p class="m-2 text-nowrap text-xs font-semibold">{name}</p>
+        </a>
+    ) : (
+        <div
+            class={
+                "flex items-center rounded-md border-2 border-gray-200 border-opacity-50 align-middle"
+            }
+        >
+            <p class="m-2 text-nowrap text-xs font-semibold">{name}</p>
+        </div>
+    )
+}

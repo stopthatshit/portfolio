@@ -1,0 +1,24 @@
+---
+interface Props {
+    title: string;
+    url: string;
+}
+
+const { title, url } = Astro.props;
+---
+
+<section class="group flex w-full flex-col">
+    <div class="group-hover:text-teal-100">
+        <a
+            href={url}
+            class="text-lg font-semibold"
+            target="_blank"
+            rel="noreferrer"
+        >
+            {title}
+        </a>
+    </div>
+    <div>
+        <slot />
+    </div>
+</section>
