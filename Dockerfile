@@ -9,4 +9,4 @@ RUN bun run build
 
 FROM nginx:alpine AS runner
 COPY --from=builder /app/dist /usr/share/nginx/html
-COPY nginx_site.conf /etc/nginx/conf.d/portfolio.conf
+COPY nginx_site.conf /etc/nginx/conf.d/default.conf
