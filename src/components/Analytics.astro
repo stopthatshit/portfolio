@@ -1,6 +1,9 @@
 ---
 const posthogKey = import.meta.env.PUBLIC_POSTHOG_KEY;
 const isProd = import.meta.env.PROD;
+if (isProd && !posthogKey) {
+    throw new Error("\nPUBLIC_POSTHOG_KEY is not set\n");
+}
 ---
 
 <script is:inline define:vars={{ posthogKey, isProd }}>
