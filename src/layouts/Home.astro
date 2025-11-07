@@ -10,10 +10,9 @@ interface Props {
 }
 
 const { title, containerClass } = Astro.props;
-const displayTitle = title ? `${title} | stoppedas.xyz` : "stoppedas.xyz";
 ---
 
-<Base title={displayTitle}>
+<Base title={title}>
     <div class="mx-auto flex max-w-[600px] flex-col px-4">
         <div class="flex flex-col justify-center gap-8 rounded-b-lg px-6 py-4">
             <TopNav />
