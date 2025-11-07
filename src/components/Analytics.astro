@@ -17,8 +17,8 @@ const isProd = import.meta.env.PROD;
                         (t[e] = function () {
                             t.push(
                                 [e].concat(
-                                    Array.prototype.slice.call(arguments, 0)
-                                )
+                                    Array.prototype.slice.call(arguments, 0),
+                                ),
                             );
                         }));
                 }
@@ -28,11 +28,11 @@ const isProd = import.meta.env.PROD;
                     (p.src =
                         s.api_host.replace(
                             ".i.posthog.com",
-                            "-assets.i.posthog.com"
+                            "-assets.i.posthog.com",
                         ) + "/static/array.js"),
                     (r =
                         t.getElementsByTagName(
-                            "script"
+                            "script",
                         )[0]).parentNode.insertBefore(p, r));
                 var u = e;
                 for (
@@ -51,7 +51,7 @@ const isProd = import.meta.env.PROD;
                         },
                         o =
                             "init fi Cr Or ci Tr Ir capture Mi calculateEventProperties Ar register register_once register_for_session unregister unregister_for_session Nr getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty jr Mr createPersonProfile Lr kr Ur opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing Fr debug M Dr getPageViewId captureTraceFeedback captureTraceMetric $r".split(
-                                " "
+                                " ",
                             ),
                         n = 0;
                     n < o.length;

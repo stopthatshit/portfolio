@@ -2,7 +2,7 @@ name: portfolio
 
 services:
     portfolio:
-        build: .
+        image: ghcr.io/stopthatshit/portfolio:main
         restart: unless-stopped
         networks:
             - traefik
