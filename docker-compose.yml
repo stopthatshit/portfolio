@@ -9,7 +9,7 @@ services:
         labels:
             - traefik.enable=true
             - traefik.http.routers.portfolio.entrypoints=websecure
-            - traefik.http.routers.portfolio.rule=Host(`stoppedas.xyz`)
+            - traefik.http.routers.portfolio.rule=Host(`${DOMAIN}`)
             - traefik.http.routers.portfolio.service=portfolio
             - traefik.http.services.portfolio.loadbalancer.server.port=80
 
